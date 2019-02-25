@@ -1,0 +1,6 @@
+exportMesh
+==========
+
+.. currentmodule:: dfnlab.DFNIO
+
+.. autofunction:: exportMesh

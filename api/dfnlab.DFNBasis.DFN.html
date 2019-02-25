@@ -1,0 +1,455 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DFN &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Extraable" href="dfnlab.DFNBasis.Extraable.html" />
+    <link rel="prev" title="Border" href="dfnlab.DFNBasis.Border.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Extraable.html" title="Extraable"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Border.html" title="Border"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Border.html"
+                        title="previous chapter">Border</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Extraable.html"
+                        title="next chapter">Extraable</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNBasis.DFN.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="dfn">
+<h1>DFN<a class="headerlink" href="#dfn" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNBasis.DFN">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNBasis.</code><code class="descname">DFN</code><a class="headerlink" href="#dfnlab.DFNBasis.DFN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>Main class dealing with DFN objects</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.addFracture" title="dfnlab.DFNBasis.DFN.addFracture"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addFracture</span></code></a>(self,&nbsp;fracture,&nbsp;truncate_system)</td>
+<td>add fracture in system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.changeSystem" title="dfnlab.DFNBasis.DFN.changeSystem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeSystem</span></code></a>(self,&nbsp;system,&nbsp;clean)</td>
+<td>change the system.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.cleanDFN" title="dfnlab.DFNBasis.DFN.cleanDFN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cleanDFN</span></code></a>(self)</td>
+<td>clean the DFN if it is dirty</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.cleanIntersections" title="dfnlab.DFNBasis.DFN.cleanIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cleanIntersections</span></code></a>(self,&nbsp;type)</td>
+<td>clean intersections between fractures and with wells.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.computeIntersections" title="dfnlab.DFNBasis.DFN.computeIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">computeIntersections</span></code></a>(self,&nbsp;type)</td>
+<td>compute intersections between fractures and with wells.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.computeIntersectionsDeprecated" title="dfnlab.DFNBasis.DFN.computeIntersectionsDeprecated"><code class="xref py py-obj docutils literal notranslate"><span class="pre">computeIntersectionsDeprecated</span></code></a>(self,&nbsp;type)</td>
+<td>compute intersections between fractures and with wells.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.density" title="dfnlab.DFNBasis.DFN.density"><code class="xref py py-obj docutils literal notranslate"><span class="pre">density</span></code></a>(self)</td>
+<td>return the DFN mass density Sum(A(f)) with A(f) the fracture area</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.extraList" title="dfnlab.DFNBasis.DFN.extraList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extraList</span></code></a>(self)</td>
+<td>return the list of extras defined in fractures</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.getFracture" title="dfnlab.DFNBasis.DFN.getFracture"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFracture</span></code></a>(self,&nbsp;i,&nbsp;inSystem)</td>
+<td>return ith fracture.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.getFractureByIndex" title="dfnlab.DFNBasis.DFN.getFractureByIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFractureByIndex</span></code></a>(self,&nbsp;ind)</td>
+<td>return fracture of index ind.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.getIntersectionBorder" title="dfnlab.DFNBasis.DFN.getIntersectionBorder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIntersectionBorder</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th intersection between a border and a fracture</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.getIntersectionFracture" title="dfnlab.DFNBasis.DFN.getIntersectionFracture"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIntersectionFracture</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th intersection between fractures</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.getSystem" title="dfnlab.DFNBasis.DFN.getSystem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSystem</span></code></a>(self)</td>
+<td>return a pointer to the containing geological system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.isDirty" title="dfnlab.DFNBasis.DFN.isDirty"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isDirty</span></code></a>(self)</td>
+<td>tell if the system is dirty, i.e., intersections must be updated</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.iterIntersectionsBorders" title="dfnlab.DFNBasis.DFN.iterIntersectionsBorders"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterIntersectionsBorders</span></code></a>(self)</td>
+<td>Intersections border-fracture iterator</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.iterIntersectionsFractures" title="dfnlab.DFNBasis.DFN.iterIntersectionsFractures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterIntersectionsFractures</span></code></a>(self)</td>
+<td>Intersections between fractures iterator</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.iterIntersectionsWells" title="dfnlab.DFNBasis.DFN.iterIntersectionsWells"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterIntersectionsWells</span></code></a>(self)</td>
+<td>Intersections well-fracture iterator</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.maxFractureSize" title="dfnlab.DFNBasis.DFN.maxFractureSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">maxFractureSize</span></code></a>(self,&nbsp;inSystem)</td>
+<td>return the maximum fracture size, inSystem=false: all fractures</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.minFractureSize" title="dfnlab.DFNBasis.DFN.minFractureSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">minFractureSize</span></code></a>(self,&nbsp;inSystem)</td>
+<td>return the minimum fracture size, inSystem=false: all fractures</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.nbFractures" title="dfnlab.DFNBasis.DFN.nbFractures"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbFractures</span></code></a>(self,&nbsp;inSystem)</td>
+<td>return the number of fractures.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.nbIntersections" title="dfnlab.DFNBasis.DFN.nbIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbIntersections</span></code></a>(self,&nbsp;type)</td>
+<td>return number of intersections.if type==0: only fracture, type==1: only with wells, type==2: only with borders, type==3 all</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.nbIntersectionsFracture" title="dfnlab.DFNBasis.DFN.nbIntersectionsFracture"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbIntersectionsFracture</span></code></a>(self,&nbsp;i,&nbsp;type,&nbsp;inSystem)</td>
+<td>return number of intersections ff the ith fracture.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.percolation" title="dfnlab.DFNBasis.DFN.percolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">percolation</span></code></a>(self)</td>
+<td>return the DFN percolation Sum(A(f)^1.5) with A(f) the fracture area</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.rescale" title="dfnlab.DFNBasis.DFN.rescale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rescale</span></code></a>(self,&nbsp;ratio)</td>
+<td>rescale the DFN according  to ratio</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setFractureNormal" title="dfnlab.DFNBasis.DFN.setFractureNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setFractureNormal</span></code></a>(self,&nbsp;i,&nbsp;norm,&nbsp;1]],&nbsp;inSystem)</td>
+<td>set fracture normal of the ith fracture.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setFracturePosition" title="dfnlab.DFNBasis.DFN.setFracturePosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setFracturePosition</span></code></a>(self,&nbsp;i,&nbsp;pos,&nbsp;1]],&nbsp;inSystem)</td>
+<td>set fracture position of the ith fracture.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setFractureSize" title="dfnlab.DFNBasis.DFN.setFractureSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setFractureSize</span></code></a>(self,&nbsp;i,&nbsp;size,&nbsp;inSystem)</td>
+<td>set fracture size of the ith fracture.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setWellTunnelOrientation" title="dfnlab.DFNBasis.DFN.setWellTunnelOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setWellTunnelOrientation</span></code></a>(self,&nbsp;i,&nbsp;pos,&nbsp;1]])</td>
+<td>set the i-th well/tunnel orientation</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setWellTunnelPosition" title="dfnlab.DFNBasis.DFN.setWellTunnelPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setWellTunnelPosition</span></code></a>(self,&nbsp;i,&nbsp;position,&nbsp;1]])</td>
+<td>set the i-th well/tunnel position</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.setWellTunnelSize" title="dfnlab.DFNBasis.DFN.setWellTunnelSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setWellTunnelSize</span></code></a>(self,&nbsp;i,&nbsp;size)</td>
+<td>set the i-th well/tunnel size</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sizeDistribution" title="dfnlab.DFNBasis.DFN.sizeDistribution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sizeDistribution</span></code></a>(self,&nbsp;nb_bin)</td>
+<td>return size distribution of fractures in system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sysPMax" title="dfnlab.DFNBasis.DFN.sysPMax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysPMax</span></code></a>(self)</td>
+<td>return the upper point of the system AABB</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sysPMin" title="dfnlab.DFNBasis.DFN.sysPMin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysPMin</span></code></a>(self)</td>
+<td>return the lower point of the system AABB</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sysSize" title="dfnlab.DFNBasis.DFN.sysSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysSize</span></code></a>(self)</td>
+<td>return the system size</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sysSizeCube" title="dfnlab.DFNBasis.DFN.sysSizeCube"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysSizeCube</span></code></a>(self)</td>
+<td>return the system dimension [Lx, Ly, Lz]</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.DFN.sysVolume" title="dfnlab.DFNBasis.DFN.sysVolume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sysVolume</span></code></a>(self)</td>
+<td>return the system volume</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.addFracture">
+<code class="descname">addFracture</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>fracture: dfnlab.DFNBasis.IFracture</em>, <em>truncate_system: bool=True</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.DFN.addFracture" title="Permalink to this definition">¶</a></dt>
+<dd><p>add fracture in system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.changeSystem">
+<code class="descname">changeSystem</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>system: dfnlab.DFNBasis.System</em>, <em>clean: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.changeSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>change the system. The DFN become dirty if clean is set to false</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.cleanDFN">
+<code class="descname">cleanDFN</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.cleanDFN" title="Permalink to this definition">¶</a></dt>
+<dd><p>clean the DFN if it is dirty</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.cleanIntersections">
+<code class="descname">cleanIntersections</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>type: int=2</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.cleanIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>clean intersections between fractures and with wells. if type==0: only fracture, type==1: only with wells, tupe==2: both</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.computeIntersections">
+<code class="descname">computeIntersections</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>type: int=2</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.computeIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute intersections between fractures and with wells. if type==0: only fracture, type==1: only with wells, tupe==2: both</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.computeIntersectionsDeprecated">
+<code class="descname">computeIntersectionsDeprecated</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>type: int=2</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.computeIntersectionsDeprecated" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute intersections between fractures and with wells. if type==0: only fracture, type==1: only with wells, tupe==2: both</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.density">
+<code class="descname">density</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.density" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the DFN mass density Sum(A(f)) with A(f) the fracture area</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.extraList">
+<code class="descname">extraList</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; Set[str]<a class="headerlink" href="#dfnlab.DFNBasis.DFN.extraList" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the list of extras defined in fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.getFracture">
+<code class="descname">getFracture</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IFracture<a class="headerlink" href="#dfnlab.DFNBasis.DFN.getFracture" title="Permalink to this definition">¶</a></dt>
+<dd><p>return ith fracture. if inSystem=true: fractures contained in current system, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.getFractureByIndex">
+<code class="descname">getFractureByIndex</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>ind: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IFracture<a class="headerlink" href="#dfnlab.DFNBasis.DFN.getFractureByIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>return fracture of index ind.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.getIntersectionBorder">
+<code class="descname">getIntersectionBorder</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IIntersection<a class="headerlink" href="#dfnlab.DFNBasis.DFN.getIntersectionBorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th intersection between a border and a fracture</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.getIntersectionFracture">
+<code class="descname">getIntersectionFracture</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IIntersection<a class="headerlink" href="#dfnlab.DFNBasis.DFN.getIntersectionFracture" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th intersection between fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.getSystem">
+<code class="descname">getSystem</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.System<a class="headerlink" href="#dfnlab.DFNBasis.DFN.getSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a pointer to the containing geological system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.isDirty">
+<code class="descname">isDirty</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.DFN.isDirty" title="Permalink to this definition">¶</a></dt>
+<dd><p>tell if the system is dirty, i.e., intersections must be updated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.iterIntersectionsBorders">
+<code class="descname">iterIntersectionsBorders</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; iterator<a class="headerlink" href="#dfnlab.DFNBasis.DFN.iterIntersectionsBorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intersections border-fracture iterator</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.iterIntersectionsFractures">
+<code class="descname">iterIntersectionsFractures</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; iterator<a class="headerlink" href="#dfnlab.DFNBasis.DFN.iterIntersectionsFractures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intersections between fractures iterator</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.iterIntersectionsWells">
+<code class="descname">iterIntersectionsWells</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; iterator<a class="headerlink" href="#dfnlab.DFNBasis.DFN.iterIntersectionsWells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Intersections well-fracture iterator</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.maxFractureSize">
+<code class="descname">maxFractureSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.maxFractureSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the maximum fracture size, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.minFractureSize">
+<code class="descname">minFractureSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.minFractureSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the minimum fracture size, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.nbFractures">
+<code class="descname">nbFractures</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.DFN.nbFractures" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of fractures. if inSystem=true: fractures contained in current system, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.nbIntersections">
+<code class="descname">nbIntersections</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>type: int=0</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.DFN.nbIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>return number of intersections.if type==0: only fracture, type==1: only with wells, type==2: only with borders, type==3 all</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.nbIntersectionsFracture">
+<code class="descname">nbIntersectionsFracture</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em>, <em>type: int</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.DFN.nbIntersectionsFracture" title="Permalink to this definition">¶</a></dt>
+<dd><p>return number of intersections ff the ith fracture. if type==0: only fracture, type==1: only with wells, type==2: only with borders, type==3 all</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.percolation">
+<code class="descname">percolation</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.percolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the DFN percolation Sum(A(f)^1.5) with A(f) the fracture area</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.rescale">
+<code class="descname">rescale</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>ratio: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.rescale" title="Permalink to this definition">¶</a></dt>
+<dd><p>rescale the DFN according  to ratio</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setFractureNormal">
+<code class="descname">setFractureNormal</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN, i: int, norm: numpy.ndarray[float64[3, 1]], inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setFractureNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>set fracture normal of the ith fracture. if inSystem=true: fractures contained in current system, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setFracturePosition">
+<code class="descname">setFracturePosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN, i: int, pos: numpy.ndarray[float64[3, 1]], inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setFracturePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>set fracture position of the ith fracture. if inSystem=true: fractures contained in current system, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setFractureSize">
+<code class="descname">setFractureSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em>, <em>size: float</em>, <em>inSystem: bool=True</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setFractureSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>set fracture size of the ith fracture. if inSystem=true: fractures contained in current system, inSystem=false: all fractures</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setWellTunnelOrientation">
+<code class="descname">setWellTunnelOrientation</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN, i: int, pos: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setWellTunnelOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the i-th well/tunnel orientation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setWellTunnelPosition">
+<code class="descname">setWellTunnelPosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN, i: int, position: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setWellTunnelPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the i-th well/tunnel position</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.setWellTunnelSize">
+<code class="descname">setWellTunnelSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>i: int</em>, <em>size: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.DFN.setWellTunnelSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the i-th well/tunnel size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sizeDistribution">
+<code class="descname">sizeDistribution</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em>, <em>nb_bin: int=30</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sizeDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>return size distribution of fractures in system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sysPMax">
+<code class="descname">sysPMax</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sysPMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the upper point of the system AABB</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sysPMin">
+<code class="descname">sysPMin</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sysPMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the lower point of the system AABB</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sysSize">
+<code class="descname">sysSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sysSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sysSizeCube">
+<code class="descname">sysSizeCube</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sysSizeCube" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system dimension [Lx, Ly, Lz]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.DFN.sysVolume">
+<code class="descname">sysVolume</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.DFN</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.DFN.sysVolume" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system volume</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Extraable.html" title="Extraable"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Border.html" title="Border"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

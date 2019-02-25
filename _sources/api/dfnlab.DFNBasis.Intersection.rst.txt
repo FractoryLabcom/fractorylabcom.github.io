@@ -1,0 +1,47 @@
+Intersection
+============
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: Intersection
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Intersection.extraList
+      ~Intersection.getExt1
+      ~Intersection.getExt2
+      ~Intersection.getExtra
+      ~Intersection.getIndex
+      ~Intersection.getObject
+      ~Intersection.getObject1
+      ~Intersection.getObject2
+      ~Intersection.getPosition
+      ~Intersection.getPt
+      ~Intersection.getSize
+      ~Intersection.nbExtra
+      ~Intersection.setExtra
+      ~Intersection.setIndex
+      ~Intersection.setPosition
+      ~Intersection.setSize
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: extraList
+   .. automethod:: getExt1
+   .. automethod:: getExt2
+   .. automethod:: getExtra
+   .. automethod:: getIndex
+   .. automethod:: getObject
+   .. automethod:: getObject1
+   .. automethod:: getObject2
+   .. automethod:: getPosition
+   .. automethod:: getPt
+   .. automethod:: getSize
+   .. automethod:: nbExtra
+   .. automethod:: setExtra
+   .. automethod:: setIndex
+   .. automethod:: setPosition
+   .. automethod:: setSize

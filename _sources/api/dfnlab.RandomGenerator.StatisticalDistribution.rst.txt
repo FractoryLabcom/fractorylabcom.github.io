@@ -1,0 +1,35 @@
+StatisticalDistribution
+=======================
+
+.. currentmodule:: dfnlab.RandomGenerator
+
+.. autoclass:: StatisticalDistribution
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~StatisticalDistribution.getSeed
+      ~StatisticalDistribution.randomDouble
+      ~StatisticalDistribution.randomExponential
+      ~StatisticalDistribution.randomFisher
+      ~StatisticalDistribution.randomInt
+      ~StatisticalDistribution.randomLognormal
+      ~StatisticalDistribution.randomNormal
+      ~StatisticalDistribution.randomPower
+      ~StatisticalDistribution.randomUnisphere
+      ~StatisticalDistribution.setSeed
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: getSeed
+   .. automethod:: randomDouble
+   .. automethod:: randomExponential
+   .. automethod:: randomFisher
+   .. automethod:: randomInt
+   .. automethod:: randomLognormal
+   .. automethod:: randomNormal
+   .. automethod:: randomPower
+   .. automethod:: randomUnisphere
+   .. automethod:: setSeed

@@ -1,0 +1,89 @@
+Fracture
+========
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: Fracture
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Fracture.addIntersection
+      ~Fracture.area
+      ~Fracture.areaInSystem
+      ~Fracture.cleanIntersections
+      ~Fracture.copyGeom
+      ~Fracture.deleteIntersectionWithObject
+      ~Fracture.dipD
+      ~Fracture.extraList
+      ~Fracture.getCenter
+      ~Fracture.getDiameter
+      ~Fracture.getExtra
+      ~Fracture.getExtremeX
+      ~Fracture.getIndex
+      ~Fracture.getIntersection
+      ~Fracture.getIntersectionNumber
+      ~Fracture.getNormal
+      ~Fracture.getPolygonVertex
+      ~Fracture.getPosition
+      ~Fracture.getSize
+      ~Fracture.intersection
+      ~Fracture.isDisk
+      ~Fracture.isInside
+      ~Fracture.isPolygon
+      ~Fracture.nbExtra
+      ~Fracture.orientations
+      ~Fracture.pifrac
+      ~Fracture.setExtra
+      ~Fracture.setIndex
+      ~Fracture.setInside
+      ~Fracture.setNormal
+      ~Fracture.setPosition
+      ~Fracture.setSize
+      ~Fracture.toPolygon
+      ~Fracture.totalArea
+      ~Fracture.totalSize
+      ~Fracture.totarea
+      ~Fracture.vertList
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addIntersection
+   .. automethod:: area
+   .. automethod:: areaInSystem
+   .. automethod:: cleanIntersections
+   .. automethod:: copyGeom
+   .. automethod:: deleteIntersectionWithObject
+   .. automethod:: dipD
+   .. automethod:: extraList
+   .. automethod:: getCenter
+   .. automethod:: getDiameter
+   .. automethod:: getExtra
+   .. automethod:: getExtremeX
+   .. automethod:: getIndex
+   .. automethod:: getIntersection
+   .. automethod:: getIntersectionNumber
+   .. automethod:: getNormal
+   .. automethod:: getPolygonVertex
+   .. automethod:: getPosition
+   .. automethod:: getSize
+   .. automethod:: intersection
+   .. automethod:: isDisk
+   .. automethod:: isInside
+   .. automethod:: isPolygon
+   .. automethod:: nbExtra
+   .. automethod:: orientations
+   .. automethod:: pifrac
+   .. automethod:: setExtra
+   .. automethod:: setIndex
+   .. automethod:: setInside
+   .. automethod:: setNormal
+   .. automethod:: setPosition
+   .. automethod:: setSize
+   .. automethod:: toPolygon
+   .. automethod:: totalArea
+   .. automethod:: totalSize
+   .. automethod:: totarea
+   .. automethod:: vertList

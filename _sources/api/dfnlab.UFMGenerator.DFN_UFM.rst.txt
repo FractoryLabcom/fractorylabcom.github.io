@@ -1,0 +1,95 @@
+DFN_UFM
+=======
+
+.. currentmodule:: dfnlab.UFMGenerator
+
+.. autoclass:: DFN_UFM
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~DFN_UFM.addFracture
+      ~DFN_UFM.changeSystem
+      ~DFN_UFM.cleanDFN
+      ~DFN_UFM.cleanIntersections
+      ~DFN_UFM.computeIntersections
+      ~DFN_UFM.computeIntersectionsDeprecated
+      ~DFN_UFM.density
+      ~DFN_UFM.extraList
+      ~DFN_UFM.getFracture
+      ~DFN_UFM.getFractureByIndex
+      ~DFN_UFM.getFractureUFM
+      ~DFN_UFM.getIntersectionBorder
+      ~DFN_UFM.getIntersectionFracture
+      ~DFN_UFM.getSystem
+      ~DFN_UFM.hasUFMFractures
+      ~DFN_UFM.isDirty
+      ~DFN_UFM.iterIntersectionsBorders
+      ~DFN_UFM.iterIntersectionsFractures
+      ~DFN_UFM.iterIntersectionsWells
+      ~DFN_UFM.iterUFM
+      ~DFN_UFM.maxFractureSize
+      ~DFN_UFM.minFractureSize
+      ~DFN_UFM.nbFractures
+      ~DFN_UFM.nbIntersections
+      ~DFN_UFM.nbIntersectionsFracture
+      ~DFN_UFM.percolation
+      ~DFN_UFM.rescale
+      ~DFN_UFM.returnDFN
+      ~DFN_UFM.setFractureNormal
+      ~DFN_UFM.setFracturePosition
+      ~DFN_UFM.setFractureSize
+      ~DFN_UFM.setWellTunnelOrientation
+      ~DFN_UFM.setWellTunnelPosition
+      ~DFN_UFM.setWellTunnelSize
+      ~DFN_UFM.sizeDistribution
+      ~DFN_UFM.sysPMax
+      ~DFN_UFM.sysPMin
+      ~DFN_UFM.sysSize
+      ~DFN_UFM.sysSizeCube
+      ~DFN_UFM.sysVolume
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addFracture
+   .. automethod:: changeSystem
+   .. automethod:: cleanDFN
+   .. automethod:: cleanIntersections
+   .. automethod:: computeIntersections
+   .. automethod:: computeIntersectionsDeprecated
+   .. automethod:: density
+   .. automethod:: extraList
+   .. automethod:: getFracture
+   .. automethod:: getFractureByIndex
+   .. automethod:: getFractureUFM
+   .. automethod:: getIntersectionBorder
+   .. automethod:: getIntersectionFracture
+   .. automethod:: getSystem
+   .. automethod:: hasUFMFractures
+   .. automethod:: isDirty
+   .. automethod:: iterIntersectionsBorders
+   .. automethod:: iterIntersectionsFractures
+   .. automethod:: iterIntersectionsWells
+   .. automethod:: iterUFM
+   .. automethod:: maxFractureSize
+   .. automethod:: minFractureSize
+   .. automethod:: nbFractures
+   .. automethod:: nbIntersections
+   .. automethod:: nbIntersectionsFracture
+   .. automethod:: percolation
+   .. automethod:: rescale
+   .. automethod:: returnDFN
+   .. automethod:: setFractureNormal
+   .. automethod:: setFracturePosition
+   .. automethod:: setFractureSize
+   .. automethod:: setWellTunnelOrientation
+   .. automethod:: setWellTunnelPosition
+   .. automethod:: setWellTunnelSize
+   .. automethod:: sizeDistribution
+   .. automethod:: sysPMax
+   .. automethod:: sysPMin
+   .. automethod:: sysSize
+   .. automethod:: sysSizeCube
+   .. automethod:: sysVolume

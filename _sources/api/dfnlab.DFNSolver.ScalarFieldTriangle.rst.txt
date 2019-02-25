@@ -1,0 +1,17 @@
+ScalarFieldTriangle
+===================
+
+.. currentmodule:: dfnlab.DFNSolver
+
+.. autoclass:: ScalarFieldTriangle
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~ScalarFieldTriangle.print
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: print

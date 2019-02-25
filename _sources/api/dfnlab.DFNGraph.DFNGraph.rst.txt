@@ -1,0 +1,53 @@
+DFNGraph
+========
+
+.. currentmodule:: dfnlab.DFNGraph
+
+.. autoclass:: DFNGraph
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~DFNGraph.compute_Keq
+      ~DFNGraph.compute_Qexch
+      ~DFNGraph.compute_dQ
+      ~DFNGraph.compute_discharge
+      ~DFNGraph.compute_fractures_graph
+      ~DFNGraph.compute_fractures_graph_backbone
+      ~DFNGraph.compute_graph_indicators
+      ~DFNGraph.compute_intersections_graph
+      ~DFNGraph.compute_intersections_graph_backbone1
+      ~DFNGraph.compute_intersections_graph_backbone2
+      ~DFNGraph.compute_intersections_graph_super_backbone
+      ~DFNGraph.compute_other_graph_quantities
+      ~DFNGraph.contract_border_nodes_for_visu
+      ~DFNGraph.getDFN
+      ~DFNGraph.getGraph
+      ~DFNGraph.initialise_bc
+      ~DFNGraph.solve_pressure
+      ~DFNGraph.write_graph_results
+      ~DFNGraph.write_nodes_attributes
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: compute_Keq
+   .. automethod:: compute_Qexch
+   .. automethod:: compute_dQ
+   .. automethod:: compute_discharge
+   .. automethod:: compute_fractures_graph
+   .. automethod:: compute_fractures_graph_backbone
+   .. automethod:: compute_graph_indicators
+   .. automethod:: compute_intersections_graph
+   .. automethod:: compute_intersections_graph_backbone1
+   .. automethod:: compute_intersections_graph_backbone2
+   .. automethod:: compute_intersections_graph_super_backbone
+   .. automethod:: compute_other_graph_quantities
+   .. automethod:: contract_border_nodes_for_visu
+   .. automethod:: getDFN
+   .. automethod:: getGraph
+   .. automethod:: initialise_bc
+   .. automethod:: solve_pressure
+   .. automethod:: write_graph_results
+   .. automethod:: write_nodes_attributes

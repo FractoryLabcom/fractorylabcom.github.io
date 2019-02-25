@@ -1,0 +1,25 @@
+Segment
+=======
+
+.. currentmodule:: dfnlab.Geometry
+
+.. autoclass:: Segment
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Segment.getExt1
+      ~Segment.getExt2
+      ~Segment.getSize
+      ~Segment.isInside
+      ~Segment.midpoint
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: getExt1
+   .. automethod:: getExt2
+   .. automethod:: getSize
+   .. automethod:: isInside
+   .. automethod:: midpoint

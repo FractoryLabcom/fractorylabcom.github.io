@@ -1,0 +1,302 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DFNAnalyser &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="FractureSetFisher" href="dfnlab.DFNAnalysis.FractureSetFisher.html" />
+    <link rel="prev" title="Well1D" href="dfnlab.DFNBasis.Well1D.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNAnalysis.FractureSetFisher.html" title="FractureSetFisher"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Well1D.html" title="Well1D"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Well1D.html"
+                        title="previous chapter">Well1D</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNAnalysis.FractureSetFisher.html"
+                        title="next chapter">FractureSetFisher</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNAnalysis.DFNAnalyser.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="dfnanalyser">
+<h1>DFNAnalyser<a class="headerlink" href="#dfnanalyser" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNAnalysis.</code><code class="descname">DFNAnalyser</code><a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>The DFN analyzer</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction1D" title="dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">correlationPairFunction1D</span></code></a>(self,&nbsp;well,&nbsp;rmin,&nbsp;nbin)</td>
+<td>compute correlation pair function of fracture intersections with the ith well</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction3D" title="dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">correlationPairFunction3D</span></code></a>(self,&nbsp;rmin,&nbsp;nbin)</td>
+<td>compute correlation pair function of fracture centers</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction1D" title="dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCorrelationPairFunction1D</span></code></a>(self,&nbsp;wellId)</td>
+<td>get correlation pair function of fracture intersections with the ith well</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction3D" title="dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCorrelationPairFunction3D</span></code></a>(self)</td>
+<td>get correlation pair function of fracture centers</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getDFN" title="dfnlab.DFNAnalysis.DFNAnalyser.getDFN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDFN</span></code></a>(self)</td>
+<td>get the DFN</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity1D" title="dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLacunarity1D</span></code></a>(self,&nbsp;wellId)</td>
+<td>get 1D density lacunarity distribution for the ith well</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity3D" title="dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLacunarity3D</span></code></a>(self)</td>
+<td>get 3D densities lacunarity distribution</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getMassDimension" title="dfnlab.DFNAnalysis.DFNAnalyser.getMassDimension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMassDimension</span></code></a>(self)</td>
+<td>get mass dimension of the network</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.getSizeDistribution" title="dfnlab.DFNAnalysis.DFNAnalyser.getSizeDistribution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSizeDistribution</span></code></a>(self)</td>
+<td>get size distribution</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.identifyFractureSets" title="dfnlab.DFNAnalysis.DFNAnalyser.identifyFractureSets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">identifyFractureSets</span></code></a>(self,&nbsp;fractureSets)</td>
+<td>identify fracture sets from given list of Fisher parameters (dip,dipDir,kappa)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.lacunarity1D" title="dfnlab.DFNAnalysis.DFNAnalyser.lacunarity1D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lacunarity1D</span></code></a>(self,&nbsp;well,&nbsp;smin,&nbsp;overlapRatio)</td>
+<td>compute 1D density lacunarity distribution for the ith well</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.lacunarity3D" title="dfnlab.DFNAnalysis.DFNAnalyser.lacunarity3D"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lacunarity3D</span></code></a>(self,&nbsp;smin,&nbsp;overlapRatio)</td>
+<td>compute 3D densities lacunarity distribution</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.massDimension" title="dfnlab.DFNAnalysis.DFNAnalyser.massDimension"><code class="xref py py-obj docutils literal notranslate"><span class="pre">massDimension</span></code></a>(self,&nbsp;rmin,&nbsp;nbin,&nbsp;nbCenters,&nbsp;seed)</td>
+<td>compute the mass dimension of the network</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.p10" title="dfnlab.DFNAnalysis.DFNAnalyser.p10"><code class="xref py py-obj docutils literal notranslate"><span class="pre">p10</span></code></a>(self,&nbsp;wellId)</td>
+<td>compute p10 for the ith well</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.p30" title="dfnlab.DFNAnalysis.DFNAnalyser.p30"><code class="xref py py-obj docutils literal notranslate"><span class="pre">p30</span></code></a>(self,&nbsp;fromSurface)</td>
+<td>compute fracture center density</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.p32" title="dfnlab.DFNAnalysis.DFNAnalyser.p32"><code class="xref py py-obj docutils literal notranslate"><span class="pre">p32</span></code></a>(self)</td>
+<td>compute fracture intensity</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.percolation" title="dfnlab.DFNAnalysis.DFNAnalyser.percolation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">percolation</span></code></a>(self,&nbsp;fromSurface)</td>
+<td>compute percolation parameter</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.sizeDistribution" title="dfnlab.DFNAnalysis.DFNAnalyser.sizeDistribution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sizeDistribution</span></code></a>(self,&nbsp;nBin)</td>
+<td>return size distribution of fractures in system</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNAnalysis.DFNAnalyser.write_distribution" title="dfnlab.DFNAnalysis.DFNAnalyser.write_distribution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_distribution</span></code></a>(distribution,&nbsp;…)</td>
+<td>write the given distribution in a file</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction1D">
+<code class="descname">correlationPairFunction1D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>well: int</em>, <em>rmin: float</em>, <em>nbin: int=30</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction1D" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute correlation pair function of fracture intersections with the ith well</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction3D">
+<code class="descname">correlationPairFunction3D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>rmin: float</em>, <em>nbin: int=30</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.correlationPairFunction3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute correlation pair function of fracture centers</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction1D">
+<code class="descname">getCorrelationPairFunction1D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>wellId: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction1D" title="Permalink to this definition">¶</a></dt>
+<dd><p>get correlation pair function of fracture intersections with the ith well</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction3D">
+<code class="descname">getCorrelationPairFunction3D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getCorrelationPairFunction3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>get correlation pair function of fracture centers</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getDFN">
+<code class="descname">getDFN</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.DFN<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getDFN" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the DFN</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity1D">
+<code class="descname">getLacunarity1D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>wellId: int</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity1D" title="Permalink to this definition">¶</a></dt>
+<dd><p>get 1D density lacunarity distribution for the ith well</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity3D">
+<code class="descname">getLacunarity3D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getLacunarity3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>get 3D densities lacunarity distribution</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getMassDimension">
+<code class="descname">getMassDimension</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getMassDimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>get mass dimension of the network</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.getSizeDistribution">
+<code class="descname">getSizeDistribution</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.getSizeDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>get size distribution</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.identifyFractureSets">
+<code class="descname">identifyFractureSets</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser, fractureSets: List[dfnlab.DFNAnalysis.FractureSetFisher]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.identifyFractureSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>identify fracture sets from given list of Fisher parameters (dip,dipDir,kappa)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.lacunarity1D">
+<code class="descname">lacunarity1D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>well: int</em>, <em>smin: float</em>, <em>overlapRatio: float=0.0</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.lacunarity1D" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute 1D density lacunarity distribution for the ith well</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.lacunarity3D">
+<code class="descname">lacunarity3D</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>smin: float</em>, <em>overlapRatio: float=0.0</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.lacunarity3D" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute 3D densities lacunarity distribution</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.massDimension">
+<code class="descname">massDimension</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>rmin: float</em>, <em>nbin: int=30</em>, <em>nbCenters: int=100</em>, <em>seed: int=1000</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.massDimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the mass dimension of the network</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.p10">
+<code class="descname">p10</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>wellId: int</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.p10" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute p10 for the ith well</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.p30">
+<code class="descname">p30</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>fromSurface: bool=True</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.p30" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute fracture center density</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.p32">
+<code class="descname">p32</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.p32" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute fracture intensity</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.percolation">
+<code class="descname">percolation</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>fromSurface: bool=True</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.percolation" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute percolation parameter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.sizeDistribution">
+<code class="descname">sizeDistribution</code><span class="sig-paren">(</span><em>self: dfnlab.DFNAnalysis.DFNAnalyser</em>, <em>nBin: int=30</em><span class="sig-paren">)</span> &#x2192; Dict[str, List[float]]<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.sizeDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>return size distribution of fractures in system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNAnalysis.DFNAnalyser.write_distribution">
+<code class="descname">write_distribution</code><span class="sig-paren">(</span><em>distribution: Dict[str, List[float]], filename: str</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNAnalysis.DFNAnalyser.write_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>write the given distribution in a file</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNAnalysis.FractureSetFisher.html" title="FractureSetFisher"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Well1D.html" title="Well1D"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+HydraulicGrid2D
+===============
+
+.. currentmodule:: dfnlab.DFNHydro
+
+.. autoclass:: HydraulicGrid2D
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~HydraulicGrid2D.clean
+      ~HydraulicGrid2D.generateValues
+      ~HydraulicGrid2D.getMatrix
+      ~HydraulicGrid2D.getValue
+      ~HydraulicGrid2D.incrementSeed
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: clean
+   .. automethod:: generateValues
+   .. automethod:: getMatrix
+   .. automethod:: getValue
+   .. automethod:: incrementSeed

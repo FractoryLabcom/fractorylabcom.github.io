@@ -1,0 +1,6 @@
+write_DFN_file
+==============
+
+.. currentmodule:: dfnlab.DFNIO
+
+.. autofunction:: write_DFN_file

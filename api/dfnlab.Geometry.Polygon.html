@@ -1,0 +1,221 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Polygon &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Polyhedron" href="dfnlab.Geometry.Polyhedron.html" />
+    <link rel="prev" title="Plane" href="dfnlab.Geometry.Plane.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.Geometry.Polyhedron.html" title="Polyhedron"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.Geometry.Plane.html" title="Plane"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.Geometry.Plane.html"
+                        title="previous chapter">Plane</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.Geometry.Polyhedron.html"
+                        title="next chapter">Polyhedron</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.Geometry.Polygon.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="polygon">
+<h1>Polygon<a class="headerlink" href="#polygon" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.Geometry.Polygon">
+<em class="property">class </em><code class="descclassname">dfnlab.Geometry.</code><code class="descname">Polygon</code><a class="headerlink" href="#dfnlab.Geometry.Polygon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>A polygon geometry</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.append" title="dfnlab.Geometry.Polygon.append"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code></a>(self,&nbsp;vertex,&nbsp;1]])</td>
+<td>append the vertex to the polygon</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.area" title="dfnlab.Geometry.Polygon.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a>(self)</td>
+<td>return the polygon surface</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.correct" title="dfnlab.Geometry.Polygon.correct"><code class="xref py py-obj docutils literal notranslate"><span class="pre">correct</span></code></a>(self)</td>
+<td>correct the polygon to have counter-clockwise oriented vertexes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.getBarycenter" title="dfnlab.Geometry.Polygon.getBarycenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBarycenter</span></code></a>(self)</td>
+<td>return the barycenter</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.getExtremeX" title="dfnlab.Geometry.Polygon.getExtremeX"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExtremeX</span></code></a>(self)</td>
+<td>return xmin and xmax of the containing AABB</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.getNormal" title="dfnlab.Geometry.Polygon.getNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNormal</span></code></a>(self)</td>
+<td>return the normal to the polygon</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.getSize" title="dfnlab.Geometry.Polygon.getSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSize</span></code></a>(self)</td>
+<td>return the size, i.e.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.insert" title="dfnlab.Geometry.Polygon.insert"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code></a>(self,&nbsp;i,&nbsp;vertex,&nbsp;1]])</td>
+<td>insert the vertex at pos i in the polygon</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.isInside" title="dfnlab.Geometry.Polygon.isInside"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isInside</span></code></a>(self,&nbsp;arg0,&nbsp;1]])</td>
+<td>test if a point is in the polygon</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.Geometry.Polygon.triangulate" title="dfnlab.Geometry.Polygon.triangulate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">triangulate</span></code></a>(self)</td>
+<td>triangulate the polygon</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.append">
+<code class="descname">append</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon, vertex: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.Geometry.Polygon.append" title="Permalink to this definition">¶</a></dt>
+<dd><p>append the vertex to the polygon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.area">
+<code class="descname">area</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.Geometry.Polygon.area" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the polygon surface</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.correct">
+<code class="descname">correct</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.Geometry.Polygon.correct" title="Permalink to this definition">¶</a></dt>
+<dd><p>correct the polygon to have counter-clockwise oriented vertexes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.getBarycenter">
+<code class="descname">getBarycenter</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.Geometry.Polygon.getBarycenter" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the barycenter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.getExtremeX">
+<code class="descname">getExtremeX</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; Tuple[float, float]<a class="headerlink" href="#dfnlab.Geometry.Polygon.getExtremeX" title="Permalink to this definition">¶</a></dt>
+<dd><p>return xmin and xmax of the containing AABB</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.getNormal">
+<code class="descname">getNormal</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.Geometry.Polygon.getNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the normal to the polygon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.getSize">
+<code class="descname">getSize</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.Geometry.Polygon.getSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the size, i.e. max distance between vertexes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.insert">
+<code class="descname">insert</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon, i: int, vertex: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.Geometry.Polygon.insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>insert the vertex at pos i in the polygon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.isInside">
+<code class="descname">isInside</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon, arg0: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.Geometry.Polygon.isInside" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if a point is in the polygon</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.Geometry.Polygon.triangulate">
+<code class="descname">triangulate</code><span class="sig-paren">(</span><em>self: dfnlab.Geometry.Polygon</em><span class="sig-paren">)</span> &#x2192; List[dfnlab.Geometry.Polygon]<a class="headerlink" href="#dfnlab.Geometry.Polygon.triangulate" title="Permalink to this definition">¶</a></dt>
+<dd><p>triangulate the polygon</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.Geometry.Polyhedron.html" title="Polyhedron"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.Geometry.Plane.html" title="Plane"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

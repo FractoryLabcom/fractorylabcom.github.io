@@ -1,0 +1,35 @@
+Disk
+====
+
+.. currentmodule:: dfnlab.Geometry
+
+.. autoclass:: Disk
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Disk.area
+      ~Disk.decimate
+      ~Disk.getCenter
+      ~Disk.getDiameter
+      ~Disk.getExtremeX
+      ~Disk.getNormal
+      ~Disk.isInside
+      ~Disk.setDiameter
+      ~Disk.setNormal
+      ~Disk.setPosition
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: area
+   .. automethod:: decimate
+   .. automethod:: getCenter
+   .. automethod:: getDiameter
+   .. automethod:: getExtremeX
+   .. automethod:: getNormal
+   .. automethod:: isInside
+   .. automethod:: setDiameter
+   .. automethod:: setNormal
+   .. automethod:: setPosition

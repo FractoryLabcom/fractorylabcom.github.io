@@ -1,0 +1,17 @@
+ScalarFieldEdge
+===============
+
+.. currentmodule:: dfnlab.DFNSolver
+
+.. autoclass:: ScalarFieldEdge
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~ScalarFieldEdge.print
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: print

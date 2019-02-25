@@ -1,0 +1,27 @@
+CRFGenerator
+============
+
+.. currentmodule:: dfnlab.RandomGenerator
+
+.. autoclass:: CRFGenerator
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~CRFGenerator.clone
+      ~CRFGenerator.fft
+      ~CRFGenerator.generate
+      ~CRFGenerator.ifft
+      ~CRFGenerator.incrementSeed
+      ~CRFGenerator.semivariogram
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: clone
+   .. automethod:: fft
+   .. automethod:: generate
+   .. automethod:: ifft
+   .. automethod:: incrementSeed
+   .. automethod:: semivariogram

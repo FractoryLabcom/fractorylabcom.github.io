@@ -1,0 +1,55 @@
+Well1D
+======
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: Well1D
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Well1D.addIntersection
+      ~Well1D.clean
+      ~Well1D.cleanIntersections
+      ~Well1D.copyGeom
+      ~Well1D.deleteIntersectionWithObject
+      ~Well1D.extraList
+      ~Well1D.getExtra
+      ~Well1D.getIndex
+      ~Well1D.getIntersection
+      ~Well1D.getIntersectionNumber
+      ~Well1D.getLimits
+      ~Well1D.getOrientation
+      ~Well1D.getPosition
+      ~Well1D.getSize
+      ~Well1D.intersection
+      ~Well1D.nbExtra
+      ~Well1D.setExtra
+      ~Well1D.setIndex
+      ~Well1D.setPosition
+      ~Well1D.setSize
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addIntersection
+   .. automethod:: clean
+   .. automethod:: cleanIntersections
+   .. automethod:: copyGeom
+   .. automethod:: deleteIntersectionWithObject
+   .. automethod:: extraList
+   .. automethod:: getExtra
+   .. automethod:: getIndex
+   .. automethod:: getIntersection
+   .. automethod:: getIntersectionNumber
+   .. automethod:: getLimits
+   .. automethod:: getOrientation
+   .. automethod:: getPosition
+   .. automethod:: getSize
+   .. automethod:: intersection
+   .. automethod:: nbExtra
+   .. automethod:: setExtra
+   .. automethod:: setIndex
+   .. automethod:: setPosition
+   .. automethod:: setSize

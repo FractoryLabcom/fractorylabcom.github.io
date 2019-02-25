@@ -1,0 +1,364 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>IFracture &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="IIntersection" href="dfnlab.DFNBasis.IIntersection.html" />
+    <link rel="prev" title="Fracture" href="dfnlab.DFNBasis.Fracture.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.IIntersection.html" title="IIntersection"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Fracture.html" title="Fracture"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Fracture.html"
+                        title="previous chapter">Fracture</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.IIntersection.html"
+                        title="next chapter">IIntersection</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNBasis.IFracture.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ifracture">
+<h1>IFracture<a class="headerlink" href="#ifracture" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNBasis.IFracture">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNBasis.</code><code class="descname">IFracture</code><a class="headerlink" href="#dfnlab.DFNBasis.IFracture" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dfnlab.DFNBasis.Object.html#dfnlab.DFNBasis.Object" title="dfnlab.DFNBasis.Object"><code class="xref py py-class docutils literal notranslate"><span class="pre">dfnlab.DFNBasis.Object</span></code></a>, <a class="reference internal" href="dfnlab.DFNBasis.Intersected.html#dfnlab.DFNBasis.Intersected" title="dfnlab.DFNBasis.Intersected"><code class="xref py py-class docutils literal notranslate"><span class="pre">dfnlab.DFNBasis.Intersected</span></code></a>, <a class="reference internal" href="dfnlab.DFNBasis.Extraable.html#dfnlab.DFNBasis.Extraable" title="dfnlab.DFNBasis.Extraable"><code class="xref py py-class docutils literal notranslate"><span class="pre">dfnlab.DFNBasis.Extraable</span></code></a></p>
+<p>Fracture interface, unrelated to geometry</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.addIntersection" title="dfnlab.DFNBasis.IFracture.addIntersection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addIntersection</span></code></a>(self,&nbsp;intersection)</td>
+<td>set that the object contains this intersection</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.area" title="dfnlab.DFNBasis.IFracture.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a>(self)</td>
+<td>compute fracture area in current system</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.areaInSystem" title="dfnlab.DFNBasis.IFracture.areaInSystem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">areaInSystem</span></code></a>(self,&nbsp;system)</td>
+<td>compute fracture area in a given system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.cleanIntersections" title="dfnlab.DFNBasis.IFracture.cleanIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cleanIntersections</span></code></a>(self)</td>
+<td>disassociate the object with all intersections</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.copyGeom" title="dfnlab.DFNBasis.IFracture.copyGeom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyGeom</span></code></a>(self)</td>
+<td>return a fracture cleaned from all link to other objects</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.deleteIntersectionWithObject" title="dfnlab.DFNBasis.IFracture.deleteIntersectionWithObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteIntersectionWithObject</span></code></a>(self,&nbsp;object)</td>
+<td>disassociate the object to the intersection with the given object</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.dipD" title="dfnlab.DFNBasis.IFracture.dipD"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dipD</span></code></a>(self)</td>
+<td>return the dip and dip direction</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.extraList" title="dfnlab.DFNBasis.IFracture.extraList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extraList</span></code></a>(self)</td>
+<td>return all extras</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getExtra" title="dfnlab.DFNBasis.IFracture.getExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExtra</span></code></a>(self,&nbsp;name,&nbsp;defaultvalue)</td>
+<td>get extra values</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getIndex" title="dfnlab.DFNBasis.IFracture.getIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIndex</span></code></a>(self)</td>
+<td>return the index</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getIntersection" title="dfnlab.DFNBasis.IFracture.getIntersection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIntersection</span></code></a>(self,&nbsp;i)</td>
+<td>get that the i-th intersection of the object</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getIntersectionNumber" title="dfnlab.DFNBasis.IFracture.getIntersectionNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIntersectionNumber</span></code></a>(self)</td>
+<td>return the number of intersection of the object</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getNormal" title="dfnlab.DFNBasis.IFracture.getNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNormal</span></code></a>(self)</td>
+<td>return the normal</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getPosition" title="dfnlab.DFNBasis.IFracture.getPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPosition</span></code></a>(self)</td>
+<td>return the position</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.getSize" title="dfnlab.DFNBasis.IFracture.getSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSize</span></code></a>(self)</td>
+<td>return the size</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.intersection" title="dfnlab.DFNBasis.IFracture.intersection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">intersection</span></code></a>(self,&nbsp;other)</td>
+<td>test if two fractures are intersecting and return the intersection object</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.isInside" title="dfnlab.DFNBasis.IFracture.isInside"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isInside</span></code></a>(self,&nbsp;system,&nbsp;1]])</td>
+<td>test if a fracture is inside the given system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.nbExtra" title="dfnlab.DFNBasis.IFracture.nbExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbExtra</span></code></a>(self)</td>
+<td>return the number of extras</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.orientations" title="dfnlab.DFNBasis.IFracture.orientations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientations</span></code></a>(*args,&nbsp;**kwargs)</td>
+<td>Overloaded function.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.pifrac" title="dfnlab.DFNBasis.IFracture.pifrac"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pifrac</span></code></a>(self)</td>
+<td>compute the ratio between in system surface to total surface</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.setExtra" title="dfnlab.DFNBasis.IFracture.setExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setExtra</span></code></a>(self,&nbsp;name,&nbsp;value)</td>
+<td>set extra values</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.setIndex" title="dfnlab.DFNBasis.IFracture.setIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setIndex</span></code></a>(self,&nbsp;index)</td>
+<td>set the index</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.setPosition" title="dfnlab.DFNBasis.IFracture.setPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPosition</span></code></a>(self,&nbsp;position,&nbsp;1]])</td>
+<td>set the position</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.setSize" title="dfnlab.DFNBasis.IFracture.setSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSize</span></code></a>(self,&nbsp;size)</td>
+<td>set the size</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.IFracture.totarea" title="dfnlab.DFNBasis.IFracture.totarea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">totarea</span></code></a>(self)</td>
+<td>compute totale fracture area (in/out) current system</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.addIntersection">
+<code class="descname">addIntersection</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersected</em>, <em>intersection: dfnlab.DFNBasis.IIntersection</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.addIntersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>set that the object contains this intersection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.area">
+<code class="descname">area</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.area" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute fracture area in current system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.areaInSystem">
+<code class="descname">areaInSystem</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em>, <em>system: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.areaInSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute fracture area in a given system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.cleanIntersections">
+<code class="descname">cleanIntersections</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersected</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.cleanIntersections" title="Permalink to this definition">¶</a></dt>
+<dd><p>disassociate the object with all intersections</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.copyGeom">
+<code class="descname">copyGeom</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IFracture<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.copyGeom" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a fracture cleaned from all link to other objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.deleteIntersectionWithObject">
+<code class="descname">deleteIntersectionWithObject</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersected</em>, <em>object: dfnlab.DFNBasis.Intersected</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.deleteIntersectionWithObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>disassociate the object to the intersection with the given object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.dipD">
+<code class="descname">dipD</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; Tuple[float, float]<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.dipD" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the dip and dip direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.extraList">
+<code class="descname">extraList</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em><span class="sig-paren">)</span> &#x2192; Set[str]<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.extraList" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all extras</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getExtra">
+<code class="descname">getExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em>, <em>name: str</em>, <em>defaultvalue: float=0.0</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>get extra values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getIndex">
+<code class="descname">getIndex</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getIntersection">
+<code class="descname">getIntersection</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersected</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IIntersection<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getIntersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>get that the i-th intersection of the object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getIntersectionNumber">
+<code class="descname">getIntersectionNumber</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersected</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getIntersectionNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of intersection of the object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getNormal">
+<code class="descname">getNormal</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getNormal" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the normal</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getPosition">
+<code class="descname">getPosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the position</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.getSize">
+<code class="descname">getSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.getSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.intersection">
+<code class="descname">intersection</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em>, <em>other: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; Tuple[bool, dfnlab.DFNBasis.IIntersection]<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.intersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if two fractures are intersecting and return the intersection object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.isInside">
+<code class="descname">isInside</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture, system: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.isInside" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if a fracture is inside the given system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.nbExtra">
+<code class="descname">nbExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.nbExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of extras</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.orientations">
+<code class="descname">orientations</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNBasis.IFracture.orientations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overloaded function.</p>
+<ol class="arabic simple">
+<li>orientations(arg0: numpy.ndarray[float64[3, 1]]) -&gt; Tuple[float, float]</li>
+</ol>
+<p>computes dip and dip direction from normal</p>
+<ol class="arabic simple" start="2">
+<li>orientations(arg0: float, arg1: float) -&gt; numpy.ndarray[float64[3, 1]]</li>
+</ol>
+<p>computes normal from dip and dip direction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.pifrac">
+<code class="descname">pifrac</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.pifrac" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the ratio between in system surface to total surface</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.setExtra">
+<code class="descname">setExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em>, <em>name: str</em>, <em>value: float=0.0</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.setExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>set extra values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.setIndex">
+<code class="descname">setIndex</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em>, <em>index: int</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.setIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.setPosition">
+<code class="descname">setPosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object, position: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.setPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the position</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.setSize">
+<code class="descname">setSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em>, <em>size: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.setSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.IFracture.totarea">
+<code class="descname">totarea</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IFracture</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.IFracture.totarea" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute totale fracture area (in/out) current system</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.IIntersection.html" title="IIntersection"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Fracture.html" title="Fracture"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

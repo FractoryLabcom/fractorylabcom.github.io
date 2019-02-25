@@ -1,0 +1,19 @@
+DFNLinearSystem
+===============
+
+.. currentmodule:: dfnlab.DFNSolver
+
+.. autoclass:: DFNLinearSystem
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~DFNLinearSystem.applyDarcyBC
+      ~DFNLinearSystem.generateRDM
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: applyDarcyBC
+   .. automethod:: generateRDM

@@ -1,0 +1,41 @@
+Border
+======
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: Border
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Border.addIntersection
+      ~Border.cleanIntersections
+      ~Border.copyGeom
+      ~Border.deleteIntersectionWithObject
+      ~Border.getIndex
+      ~Border.getIntersection
+      ~Border.getIntersectionNumber
+      ~Border.getPosition
+      ~Border.getSize
+      ~Border.setIndex
+      ~Border.setPosition
+      ~Border.setSize
+      ~Border.toPolygon
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addIntersection
+   .. automethod:: cleanIntersections
+   .. automethod:: copyGeom
+   .. automethod:: deleteIntersectionWithObject
+   .. automethod:: getIndex
+   .. automethod:: getIntersection
+   .. automethod:: getIntersectionNumber
+   .. automethod:: getPosition
+   .. automethod:: getSize
+   .. automethod:: setIndex
+   .. automethod:: setPosition
+   .. automethod:: setSize
+   .. automethod:: toPolygon

@@ -1,0 +1,6 @@
+setConstantTransmitivity
+========================
+
+.. currentmodule:: dfnlab.DFNSolver
+
+.. autofunction:: setConstantTransmitivity

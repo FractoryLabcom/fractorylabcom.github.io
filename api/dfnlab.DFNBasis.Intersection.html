@@ -1,0 +1,275 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Intersection &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Intersection1D" href="dfnlab.DFNBasis.Intersection1D.html" />
+    <link rel="prev" title="Intersected" href="dfnlab.DFNBasis.Intersected.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Intersection1D.html" title="Intersection1D"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Intersected.html" title="Intersected"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Intersected.html"
+                        title="previous chapter">Intersected</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Intersection1D.html"
+                        title="next chapter">Intersection1D</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNBasis.Intersection.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="intersection">
+<h1>Intersection<a class="headerlink" href="#intersection" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNBasis.Intersection">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNBasis.</code><code class="descname">Intersection</code><a class="headerlink" href="#dfnlab.DFNBasis.Intersection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="dfnlab.DFNBasis.IIntersection.html#dfnlab.DFNBasis.IIntersection" title="dfnlab.DFNBasis.IIntersection"><code class="xref py py-class docutils literal notranslate"><span class="pre">dfnlab.DFNBasis.IIntersection</span></code></a></p>
+<p>Intersection between 2 planar objects</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.extraList" title="dfnlab.DFNBasis.Intersection.extraList"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extraList</span></code></a>(self)</td>
+<td>return all extras</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getExt1" title="dfnlab.DFNBasis.Intersection.getExt1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExt1</span></code></a>(self)</td>
+<td>return the 1st point of intersection</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getExt2" title="dfnlab.DFNBasis.Intersection.getExt2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExt2</span></code></a>(self)</td>
+<td>return the 2nd point of intersection</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getExtra" title="dfnlab.DFNBasis.Intersection.getExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getExtra</span></code></a>(self,&nbsp;name,&nbsp;defaultvalue)</td>
+<td>get extra values</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getIndex" title="dfnlab.DFNBasis.Intersection.getIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getIndex</span></code></a>(self)</td>
+<td>return the index</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getObject" title="dfnlab.DFNBasis.Intersection.getObject"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getObject</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th object, i=1 or i=2</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getObject1" title="dfnlab.DFNBasis.Intersection.getObject1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getObject1</span></code></a>(self)</td>
+<td>return the first intersected object: Well and Border if intersection is with such object</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getObject2" title="dfnlab.DFNBasis.Intersection.getObject2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getObject2</span></code></a>(self)</td>
+<td>return the second intersected object: always a fracture pointer</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getPosition" title="dfnlab.DFNBasis.Intersection.getPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPosition</span></code></a>(self)</td>
+<td>return the position</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getPt" title="dfnlab.DFNBasis.Intersection.getPt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPt</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th point of intersection, i=1 or i=2</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.getSize" title="dfnlab.DFNBasis.Intersection.getSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSize</span></code></a>(self)</td>
+<td>return the size</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.nbExtra" title="dfnlab.DFNBasis.Intersection.nbExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbExtra</span></code></a>(self)</td>
+<td>return the number of extras</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.setExtra" title="dfnlab.DFNBasis.Intersection.setExtra"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setExtra</span></code></a>(self,&nbsp;name,&nbsp;value)</td>
+<td>set extra values</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.setIndex" title="dfnlab.DFNBasis.Intersection.setIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setIndex</span></code></a>(self,&nbsp;index)</td>
+<td>set the index</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.setPosition" title="dfnlab.DFNBasis.Intersection.setPosition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPosition</span></code></a>(self,&nbsp;position,&nbsp;1]])</td>
+<td>set the position</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.Intersection.setSize" title="dfnlab.DFNBasis.Intersection.setSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setSize</span></code></a>(self,&nbsp;size)</td>
+<td>set the size</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.extraList">
+<code class="descname">extraList</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em><span class="sig-paren">)</span> &#x2192; Set[str]<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.extraList" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all extras</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getExt1">
+<code class="descname">getExt1</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersection</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getExt1" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the 1st point of intersection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getExt2">
+<code class="descname">getExt2</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersection</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getExt2" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the 2nd point of intersection</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getExtra">
+<code class="descname">getExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em>, <em>name: str</em>, <em>defaultvalue: float=0.0</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>get extra values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getIndex">
+<code class="descname">getIndex</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getObject">
+<code class="descname">getObject</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IIntersection</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; DFNBasis::Intersected<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th object, i=1 or i=2</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getObject1">
+<code class="descname">getObject1</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IIntersection</em><span class="sig-paren">)</span> &#x2192; DFNBasis::Intersected<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getObject1" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the first intersected object: Well and Border if intersection is with such object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getObject2">
+<code class="descname">getObject2</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.IIntersection</em><span class="sig-paren">)</span> &#x2192; DFNBasis::Intersected<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getObject2" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the second intersected object: always a fracture pointer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getPosition">
+<code class="descname">getPosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the position</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getPt">
+<code class="descname">getPt</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Intersection</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getPt" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th point of intersection, i=1 or i=2</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.getSize">
+<code class="descname">getSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.getSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the size</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.nbExtra">
+<code class="descname">nbExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.nbExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of extras</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.setExtra">
+<code class="descname">setExtra</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Extraable</em>, <em>name: str</em>, <em>value: float=0.0</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.setExtra" title="Permalink to this definition">¶</a></dt>
+<dd><p>set extra values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.setIndex">
+<code class="descname">setIndex</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em>, <em>index: int</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.setIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the index</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.setPosition">
+<code class="descname">setPosition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object, position: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.setPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the position</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.Intersection.setSize">
+<code class="descname">setSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.Object</em>, <em>size: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.Intersection.setSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the size</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Intersection1D.html" title="Intersection1D"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Intersected.html" title="Intersected"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

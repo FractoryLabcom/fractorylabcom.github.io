@@ -1,0 +1,21 @@
+Line
+====
+
+.. currentmodule:: dfnlab.Geometry
+
+.. autoclass:: Line
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Line.getDir
+      ~Line.getP
+      ~Line.isInside
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: getDir
+   .. automethod:: getP
+   .. automethod:: isInside

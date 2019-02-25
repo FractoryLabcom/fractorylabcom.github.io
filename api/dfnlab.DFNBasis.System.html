@@ -1,0 +1,266 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>System &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Well1D" href="dfnlab.DFNBasis.Well1D.html" />
+    <link rel="prev" title="Object" href="dfnlab.DFNBasis.Object.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Well1D.html" title="Well1D"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Object.html" title="Object"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Object.html"
+                        title="previous chapter">Object</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNBasis.Well1D.html"
+                        title="next chapter">Well1D</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNBasis.System.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="system">
+<h1>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNBasis.System">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNBasis.</code><code class="descname">System</code><a class="headerlink" href="#dfnlab.DFNBasis.System" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p>Geological System</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.addWellTunnel" title="dfnlab.DFNBasis.System.addWellTunnel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addWellTunnel</span></code></a>(self,&nbsp;arg0)</td>
+<td>add a tunnel in the system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.buildParallelepiped" title="dfnlab.DFNBasis.System.buildParallelepiped"><code class="xref py py-obj docutils literal notranslate"><span class="pre">buildParallelepiped</span></code></a>(self,&nbsp;center,&nbsp;…)</td>
+<td>create a parallepipedic system</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.copyGeom" title="dfnlab.DFNBasis.System.copyGeom"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyGeom</span></code></a>(self,&nbsp;wells)</td>
+<td>return a copy of the system without link to other objects</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getBorder" title="dfnlab.DFNBasis.System.getBorder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getBorder</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th border</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getCenter" title="dfnlab.DFNBasis.System.getCenter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCenter</span></code></a>(self)</td>
+<td>return the system center</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getNumBorder" title="dfnlab.DFNBasis.System.getNumBorder"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNumBorder</span></code></a>(self)</td>
+<td>return the number of borders</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getPMax" title="dfnlab.DFNBasis.System.getPMax"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPMax</span></code></a>(self)</td>
+<td>return upper point of the AABB containing the system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getPMin" title="dfnlab.DFNBasis.System.getPMin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPMin</span></code></a>(self)</td>
+<td>return lower point of the AABB containing the system</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getSize" title="dfnlab.DFNBasis.System.getSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSize</span></code></a>(self)</td>
+<td>return the system size, i.e.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getSizeCube" title="dfnlab.DFNBasis.System.getSizeCube"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSizeCube</span></code></a>(self)</td>
+<td>return size of the AABB containing the system, [Lx, Ly, Lz]</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getVolume" title="dfnlab.DFNBasis.System.getVolume"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getVolume</span></code></a>(self)</td>
+<td>return the system volume</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.getWellTunnel" title="dfnlab.DFNBasis.System.getWellTunnel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getWellTunnel</span></code></a>(self,&nbsp;i)</td>
+<td>return the i-th wells/tunnels</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.isInside" title="dfnlab.DFNBasis.System.isInside"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isInside</span></code></a>(self,&nbsp;arg0,&nbsp;1]])</td>
+<td>test if a point is inside the system</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.iterWellsTunnels" title="dfnlab.DFNBasis.System.iterWellsTunnels"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterWellsTunnels</span></code></a>(self)</td>
+<td>iterator on wells/tunnels</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNBasis.System.nbWellTunnel" title="dfnlab.DFNBasis.System.nbWellTunnel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nbWellTunnel</span></code></a>(self)</td>
+<td>return the number of included wells/tunnels</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.addWellTunnel">
+<code class="descname">addWellTunnel</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em>, <em>arg0: dfnlab.DFNBasis.IWellTunnel</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.System.addWellTunnel" title="Permalink to this definition">¶</a></dt>
+<dd><p>add a tunnel in the system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.buildParallelepiped">
+<code class="descname">buildParallelepiped</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em>, <em>center: numpy.ndarray[float64[3</em>, <em>1]]=array([0.</em>, <em>0.</em>, <em>0.])</em>, <em>L1: float=1</em>, <em>L2: float=-1</em>, <em>L3: float=-1</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNBasis.System.buildParallelepiped" title="Permalink to this definition">¶</a></dt>
+<dd><p>create a parallepipedic system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.copyGeom">
+<code class="descname">copyGeom</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em>, <em>wells: bool=True</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.System<a class="headerlink" href="#dfnlab.DFNBasis.System.copyGeom" title="Permalink to this definition">¶</a></dt>
+<dd><p>return a copy of the system without link to other objects</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getBorder">
+<code class="descname">getBorder</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.Border<a class="headerlink" href="#dfnlab.DFNBasis.System.getBorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th border</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getCenter">
+<code class="descname">getCenter</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.System.getCenter" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system center</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getNumBorder">
+<code class="descname">getNumBorder</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.System.getNumBorder" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of borders</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getPMax">
+<code class="descname">getPMax</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.System.getPMax" title="Permalink to this definition">¶</a></dt>
+<dd><p>return upper point of the AABB containing the system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getPMin">
+<code class="descname">getPMin</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.System.getPMin" title="Permalink to this definition">¶</a></dt>
+<dd><p>return lower point of the AABB containing the system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getSize">
+<code class="descname">getSize</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.System.getSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system size, i.e. the maximum distance between vertexes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getSizeCube">
+<code class="descname">getSizeCube</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray[float64[3, 1]]<a class="headerlink" href="#dfnlab.DFNBasis.System.getSizeCube" title="Permalink to this definition">¶</a></dt>
+<dd><p>return size of the AABB containing the system, [Lx, Ly, Lz]</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getVolume">
+<code class="descname">getVolume</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; float<a class="headerlink" href="#dfnlab.DFNBasis.System.getVolume" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the system volume</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.getWellTunnel">
+<code class="descname">getWellTunnel</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em>, <em>i: int</em><span class="sig-paren">)</span> &#x2192; dfnlab.DFNBasis.IWellTunnel<a class="headerlink" href="#dfnlab.DFNBasis.System.getWellTunnel" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the i-th wells/tunnels</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.isInside">
+<code class="descname">isInside</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System, arg0: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#dfnlab.DFNBasis.System.isInside" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if a point is inside the system</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.iterWellsTunnels">
+<code class="descname">iterWellsTunnels</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; iterator<a class="headerlink" href="#dfnlab.DFNBasis.System.iterWellsTunnels" title="Permalink to this definition">¶</a></dt>
+<dd><p>iterator on wells/tunnels</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNBasis.System.nbWellTunnel">
+<code class="descname">nbWellTunnel</code><span class="sig-paren">(</span><em>self: dfnlab.DFNBasis.System</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNBasis.System.nbWellTunnel" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the number of included wells/tunnels</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Well1D.html" title="Well1D"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNBasis.Object.html" title="Object"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

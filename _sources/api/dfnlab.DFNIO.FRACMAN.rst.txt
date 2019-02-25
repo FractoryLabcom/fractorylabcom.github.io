@@ -1,0 +1,6 @@
+FRACMAN
+=======
+
+.. currentmodule:: dfnlab.DFNIO
+
+.. autodata:: FRACMAN

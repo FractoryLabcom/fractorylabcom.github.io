@@ -1,0 +1,6 @@
+appendDataOnMesh
+================
+
+.. currentmodule:: dfnlab.DFNIO
+
+.. autofunction:: appendDataOnMesh

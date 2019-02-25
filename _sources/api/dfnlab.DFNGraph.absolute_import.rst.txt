@@ -1,0 +1,6 @@
+absolute_import
+===============
+
+.. currentmodule:: dfnlab.DFNGraph
+
+.. autodata:: absolute_import

@@ -1,0 +1,45 @@
+System
+======
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: System
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~System.addWellTunnel
+      ~System.buildParallelepiped
+      ~System.copyGeom
+      ~System.getBorder
+      ~System.getCenter
+      ~System.getNumBorder
+      ~System.getPMax
+      ~System.getPMin
+      ~System.getSize
+      ~System.getSizeCube
+      ~System.getVolume
+      ~System.getWellTunnel
+      ~System.isInside
+      ~System.iterWellsTunnels
+      ~System.nbWellTunnel
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addWellTunnel
+   .. automethod:: buildParallelepiped
+   .. automethod:: copyGeom
+   .. automethod:: getBorder
+   .. automethod:: getCenter
+   .. automethod:: getNumBorder
+   .. automethod:: getPMax
+   .. automethod:: getPMin
+   .. automethod:: getSize
+   .. automethod:: getSizeCube
+   .. automethod:: getVolume
+   .. automethod:: getWellTunnel
+   .. automethod:: isInside
+   .. automethod:: iterWellsTunnels
+   .. automethod:: nbWellTunnel

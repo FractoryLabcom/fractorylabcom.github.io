@@ -1,0 +1,332 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DFNGraph &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GraphBasis" href="dfnlab.DFNGraph.GraphBasis.html" />
+    <link rel="prev" title="VTP" href="dfnlab.DFNIO.VTP.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNGraph.GraphBasis.html" title="GraphBasis"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNIO.VTP.html" title="VTP"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNIO.VTP.html"
+                        title="previous chapter">VTP</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNGraph.GraphBasis.html"
+                        title="next chapter">GraphBasis</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNGraph.DFNGraph.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="dfngraph">
+<h1>DFNGraph<a class="headerlink" href="#dfngraph" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNGraph.DFNGraph">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNGraph.</code><code class="descname">DFNGraph</code><span class="sig-paren">(</span><em>dfn</em>, <em>boundaryConditions={}</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>A graph defined from a DFN</p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_Keq" title="dfnlab.DFNGraph.DFNGraph.compute_Keq"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_Keq</span></code></a>(graph_type)</td>
+<td>Compute equivalent permeability Keq of the fracture network, using graphs From both types of graph (intersections and fractures)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_Qexch" title="dfnlab.DFNGraph.DFNGraph.compute_Qexch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_Qexch</span></code></a>(graph_type)</td>
+<td>compute Qexch, exchanged flow by nodes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_dQ" title="dfnlab.DFNGraph.DFNGraph.compute_dQ"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_dQ</span></code></a>(graph_type)</td>
+<td>compute flow channeling density indicator dQ from flow exchanged by fracture Qf.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_discharge" title="dfnlab.DFNGraph.DFNGraph.compute_discharge"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_discharge</span></code></a>([graph_type])</td>
+<td>Compute Q and set them as edges attributes.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_fractures_graph" title="dfnlab.DFNGraph.DFNGraph.compute_fractures_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_fractures_graph</span></code></a>([wij_label])</td>
+<td>Compute the fracture graph from the dfn Nodes are Fractures Edges are Intersections Node label ‘boundary’ = list[borderId] if connected to one or several Borders, else -1</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_fractures_graph_backbone" title="dfnlab.DFNGraph.DFNGraph.compute_fractures_graph_backbone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_fractures_graph_backbone</span></code></a>()</td>
+<td>Compute the fracture backbone graph from the fracture graph Node label ‘boundary’ = list[borderId] if connected to one or several Borders, else -1</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_graph_indicators" title="dfnlab.DFNGraph.DFNGraph.compute_graph_indicators"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_graph_indicators</span></code></a>([graph_type,&nbsp;…])</td>
+<td>compute some graph indicators</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph" title="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_intersections_graph</span></code></a>([wij_label])</td>
+<td>Compute the intersections graph from the dfn Nodes are Intersections Edges are connecting Fractures Node label ‘boundary’ = list[borderId] if connected to Border, else -1</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone1" title="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone1"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_intersections_graph_backbone1</span></code></a>()</td>
+<td>Compute the intersection backbone graph from the intersection graph.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone2" title="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_intersections_graph_backbone2</span></code></a>([…])</td>
+<td>Compute the intersection backbone graph from the fracture backbone graph.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_super_backbone" title="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_super_backbone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_intersections_graph_super_backbone</span></code></a>([…])</td>
+<td>Compute the intersection super backbone graph from the fracture backbone graph.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.compute_other_graph_quantities" title="dfnlab.DFNGraph.DFNGraph.compute_other_graph_quantities"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compute_other_graph_quantities</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.contract_border_nodes_for_visu" title="dfnlab.DFNGraph.DFNGraph.contract_border_nodes_for_visu"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract_border_nodes_for_visu</span></code></a>([graph_type,&nbsp;…])</td>
+<td>Only for better visualisation, same border nodes (ie ‘bc’ = 0, 1, 2, 3, 4, 5) are contracted</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.getDFN" title="dfnlab.DFNGraph.DFNGraph.getDFN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDFN</span></code></a>([label])</td>
+<td>return the dfn if label is None, return the full dfn if label = backbone, return the backbone</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.getGraph" title="dfnlab.DFNGraph.DFNGraph.getGraph"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getGraph</span></code></a>(label)</td>
+<td>return the graph with the given label</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.initialise_bc" title="dfnlab.DFNGraph.DFNGraph.initialise_bc"><code class="xref py py-obj docutils literal notranslate"><span class="pre">initialise_bc</span></code></a>([graph_type,&nbsp;wij_label])</td>
+<td>Set boundary conditions ‘bc’ for a given graph type, must be a connected graph.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.solve_pressure" title="dfnlab.DFNGraph.DFNGraph.solve_pressure"><code class="xref py py-obj docutils literal notranslate"><span class="pre">solve_pressure</span></code></a>([graph_type])</td>
+<td>compute pressure p for each nodes of the graph.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.write_graph_results" title="dfnlab.DFNGraph.DFNGraph.write_graph_results"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_graph_results</span></code></a>(folder_path[,&nbsp;dfn_name,&nbsp;…])</td>
+<td>Write graphs computed properties (Keq, dQ …)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNGraph.DFNGraph.write_nodes_attributes" title="dfnlab.DFNGraph.DFNGraph.write_nodes_attributes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write_nodes_attributes</span></code></a>(folder_path[,&nbsp;…])</td>
+<td>Write graph nodes attributes (specified in label_list) in file</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_Keq">
+<code class="descname">compute_Keq</code><span class="sig-paren">(</span><em>graph_type</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_Keq" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute equivalent permeability Keq of the fracture network, using graphs
+From both types of graph (intersections and fractures)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_Qexch">
+<code class="descname">compute_Qexch</code><span class="sig-paren">(</span><em>graph_type</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_Qexch" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute Qexch, exchanged flow by nodes.
+Compute also Qexch2, from the other type of graph
+Qexch2 for now not available for intersection graph</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_dQ">
+<code class="descname">compute_dQ</code><span class="sig-paren">(</span><em>graph_type</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_dQ" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute flow channeling density indicator dQ from flow exchanged by fracture Qf.
+Qf has been computed with fracture graph (Qexch) and with intersection graph (Qexch2),
+so we have two measurements dQ.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_discharge">
+<code class="descname">compute_discharge</code><span class="sig-paren">(</span><em>graph_type='None'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_discharge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute Q and set them as edges attributes.
+Need previous Pressure computing</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_fractures_graph">
+<code class="descname">compute_fractures_graph</code><span class="sig-paren">(</span><em>wij_label='topo'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_fractures_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the fracture graph from the dfn
+Nodes are Fractures
+Edges are Intersections
+Node label ‘boundary’ = list[borderId] if connected to one or several Borders,
+else -1</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_fractures_graph_backbone">
+<code class="descname">compute_fractures_graph_backbone</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_fractures_graph_backbone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the fracture backbone graph from the fracture graph
+Node label ‘boundary’ = list[borderId] if connected to one or several Borders,
+else -1</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_graph_indicators">
+<code class="descname">compute_graph_indicators</code><span class="sig-paren">(</span><em>graph_type=None</em>, <em>compl_info=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_graph_indicators" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute some graph indicators</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph">
+<code class="descname">compute_intersections_graph</code><span class="sig-paren">(</span><em>wij_label='topo'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the intersections graph from the dfn
+Nodes are Intersections
+Edges are connecting Fractures
+Node label ‘boundary’ = list[borderId] if connected to Border, else -1</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone1">
+<code class="descname">compute_intersections_graph_backbone1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the intersection backbone graph from the intersection graph.
+Graph dead ends and not connected clusters are removed.
+Can be time consuming because of the creation of the entire intersection graph, and of its copy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone2">
+<code class="descname">compute_intersections_graph_backbone2</code><span class="sig-paren">(</span><em>wij_label='topo'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_backbone2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the intersection backbone graph from the fracture backbone graph.
+Specificity : intersection between a fracture in backbone and a fracture not in backbone is kept.
+Node label ‘boundary’ = list[borderId] if connected to one or several Borders,
+else -1.
+‘bc’ = ‘boundary’ will be used for flow</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_super_backbone">
+<code class="descname">compute_intersections_graph_super_backbone</code><span class="sig-paren">(</span><em>wij_label='topo'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_intersections_graph_super_backbone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the intersection super backbone graph from the fracture backbone graph.
+Specificity : intersection between a fracture in backbone and a fracture not in backbone is removed.
+Node label ‘boundary’ = list[borderId] if connected to one or several Borders,
+else -1.
+‘bc’ = ‘boundary’ will be used for flow</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.compute_other_graph_quantities">
+<code class="descname">compute_other_graph_quantities</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.compute_other_graph_quantities" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.contract_border_nodes_for_visu">
+<code class="descname">contract_border_nodes_for_visu</code><span class="sig-paren">(</span><em>graph_type='None'</em>, <em>return_node=False</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.contract_border_nodes_for_visu" title="Permalink to this definition">¶</a></dt>
+<dd><p>Only for better visualisation, same border nodes (ie ‘bc’ = 0, 1, 2, 3, 4, 5) are contracted</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.getDFN">
+<code class="descname">getDFN</code><span class="sig-paren">(</span><em>label=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.getDFN" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the dfn
+if label is None, return the full dfn
+if label = backbone, return the backbone</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.getGraph">
+<code class="descname">getGraph</code><span class="sig-paren">(</span><em>label</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.getGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the graph with the given label</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.initialise_bc">
+<code class="descname">initialise_bc</code><span class="sig-paren">(</span><em>graph_type='None'</em>, <em>wij_label='topo'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.initialise_bc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set boundary conditions ‘bc’ for a given graph type, must be a connected graph.
+For fracture graph : Add a boundary node on ‘borderflow’ connected to boundary fracture, the attribute ‘bc’ allows to distinguish them from the real nodes.
+For intersection backbone graphs : the attribute ‘bc’ is already created for intersection backbone graphs, and is the same as ‘boundary’ attribute.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.solve_pressure">
+<code class="descname">solve_pressure</code><span class="sig-paren">(</span><em>graph_type='None'</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.solve_pressure" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute pressure p for each nodes of the graph.
+Solve the problem : A*p = rhs
+Input : a graph with attribute ‘bc’. If ‘bc’ = -1, the node is real, if bc = 0,1,2,3,4,5, the node is on a border</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.write_graph_results">
+<code class="descname">write_graph_results</code><span class="sig-paren">(</span><em>folder_path</em>, <em>dfn_name=''</em>, <em>label_list=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.write_graph_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write graphs computed properties (Keq, dQ …)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNGraph.DFNGraph.write_nodes_attributes">
+<code class="descname">write_nodes_attributes</code><span class="sig-paren">(</span><em>folder_path, dfn_name='', graph_type='None', label_list=['id']</em><span class="sig-paren">)</span><a class="headerlink" href="#dfnlab.DFNGraph.DFNGraph.write_nodes_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write graph nodes attributes (specified in label_list) in file</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNGraph.GraphBasis.html" title="GraphBasis"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNIO.VTP.html" title="VTP"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

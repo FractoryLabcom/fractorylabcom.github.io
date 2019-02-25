@@ -1,0 +1,55 @@
+PoissonGenerator
+================
+
+.. currentmodule:: dfnlab.DFNGenerator
+
+.. autoclass:: PoissonGenerator
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~PoissonGenerator.generate
+      ~PoissonGenerator.getDFN
+      ~PoissonGenerator.getParam
+      ~PoissonGenerator.getSeed
+      ~PoissonGenerator.randomizePositions
+      ~PoissonGenerator.setDFN
+      ~PoissonGenerator.setOrientationsBootstrapped
+      ~PoissonGenerator.setOrientationsFisher
+      ~PoissonGenerator.setOrientationsUniform
+      ~PoissonGenerator.setParam
+      ~PoissonGenerator.setPositionsBootstrapped
+      ~PoissonGenerator.setPositionsUniform
+      ~PoissonGenerator.setSeed
+      ~PoissonGenerator.setSizesBootstrapped
+      ~PoissonGenerator.setSizesExponential
+      ~PoissonGenerator.setSizesPowerlaw
+      ~PoissonGenerator.setSizesUniform
+      ~PoissonGenerator.setStopDensity
+      ~PoissonGenerator.setStopNumber
+      ~PoissonGenerator.setStopPercolation
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: generate
+   .. automethod:: getDFN
+   .. automethod:: getParam
+   .. automethod:: getSeed
+   .. automethod:: randomizePositions
+   .. automethod:: setDFN
+   .. automethod:: setOrientationsBootstrapped
+   .. automethod:: setOrientationsFisher
+   .. automethod:: setOrientationsUniform
+   .. automethod:: setParam
+   .. automethod:: setPositionsBootstrapped
+   .. automethod:: setPositionsUniform
+   .. automethod:: setSeed
+   .. automethod:: setSizesBootstrapped
+   .. automethod:: setSizesExponential
+   .. automethod:: setSizesPowerlaw
+   .. automethod:: setSizesUniform
+   .. automethod:: setStopDensity
+   .. automethod:: setStopNumber
+   .. automethod:: setStopPercolation

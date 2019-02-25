@@ -1,0 +1,21 @@
+DFNDomainBoundaryCondition
+==========================
+
+.. currentmodule:: dfnlab.DFNBoundaryCondition
+
+.. autoclass:: DFNDomainBoundaryCondition
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~DFNDomainBoundaryCondition.setFixedPressure
+      ~DFNDomainBoundaryCondition.setPermeameterCondition
+      ~DFNDomainBoundaryCondition.setWellInBC
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: setFixedPressure
+   .. automethod:: setPermeameterCondition
+   .. automethod:: setWellInBC

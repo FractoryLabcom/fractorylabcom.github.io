@@ -1,0 +1,31 @@
+HydraulicProperty
+=================
+
+.. currentmodule:: dfnlab.DFNHydro
+
+.. autoclass:: HydraulicProperty
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~HydraulicProperty.clean
+      ~HydraulicProperty.getGrid
+      ~HydraulicProperty.getValue
+      ~HydraulicProperty.incrementSeed
+      ~HydraulicProperty.isGrid
+      ~HydraulicProperty.isScalar
+      ~HydraulicProperty.isTensor
+      ~HydraulicProperty.setValue
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: clean
+   .. automethod:: getGrid
+   .. automethod:: getValue
+   .. automethod:: incrementSeed
+   .. automethod:: isGrid
+   .. automethod:: isScalar
+   .. automethod:: isTensor
+   .. automethod:: setValue

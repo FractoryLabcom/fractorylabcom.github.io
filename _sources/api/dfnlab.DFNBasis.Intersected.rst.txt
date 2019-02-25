@@ -1,0 +1,25 @@
+Intersected
+===========
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: Intersected
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~Intersected.addIntersection
+      ~Intersected.cleanIntersections
+      ~Intersected.deleteIntersectionWithObject
+      ~Intersected.getIntersection
+      ~Intersected.getIntersectionNumber
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addIntersection
+   .. automethod:: cleanIntersections
+   .. automethod:: deleteIntersectionWithObject
+   .. automethod:: getIntersection
+   .. automethod:: getIntersectionNumber

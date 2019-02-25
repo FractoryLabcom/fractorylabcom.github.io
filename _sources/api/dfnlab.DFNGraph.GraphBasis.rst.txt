@@ -1,0 +1,23 @@
+GraphBasis
+==========
+
+.. currentmodule:: dfnlab.DFNGraph
+
+.. autoclass:: GraphBasis
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~GraphBasis.compute_degree_distribution
+      ~GraphBasis.copy
+      ~GraphBasis.remove_dead_ends
+      ~GraphBasis.remove_non_connected_clusters
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: compute_degree_distribution
+   .. automethod:: copy
+   .. automethod:: remove_dead_ends
+   .. automethod:: remove_non_connected_clusters

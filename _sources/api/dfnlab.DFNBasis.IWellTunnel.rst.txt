@@ -1,0 +1,53 @@
+IWellTunnel
+===========
+
+.. currentmodule:: dfnlab.DFNBasis
+
+.. autoclass:: IWellTunnel
+   :show-inheritance:
+
+   .. rubric:: Methods Summary
+
+   .. autosummary::
+
+      ~IWellTunnel.addIntersection
+      ~IWellTunnel.clean
+      ~IWellTunnel.cleanIntersections
+      ~IWellTunnel.copyGeom
+      ~IWellTunnel.deleteIntersectionWithObject
+      ~IWellTunnel.extraList
+      ~IWellTunnel.getExtra
+      ~IWellTunnel.getIndex
+      ~IWellTunnel.getIntersection
+      ~IWellTunnel.getIntersectionNumber
+      ~IWellTunnel.getOrientation
+      ~IWellTunnel.getPosition
+      ~IWellTunnel.getSize
+      ~IWellTunnel.intersection
+      ~IWellTunnel.nbExtra
+      ~IWellTunnel.setExtra
+      ~IWellTunnel.setIndex
+      ~IWellTunnel.setPosition
+      ~IWellTunnel.setSize
+
+   .. rubric:: Methods Documentation
+
+   .. automethod:: addIntersection
+   .. automethod:: clean
+   .. automethod:: cleanIntersections
+   .. automethod:: copyGeom
+   .. automethod:: deleteIntersectionWithObject
+   .. automethod:: extraList
+   .. automethod:: getExtra
+   .. automethod:: getIndex
+   .. automethod:: getIntersection
+   .. automethod:: getIntersectionNumber
+   .. automethod:: getOrientation
+   .. automethod:: getPosition
+   .. automethod:: getSize
+   .. automethod:: intersection
+   .. automethod:: nbExtra
+   .. automethod:: setExtra
+   .. automethod:: setIndex
+   .. automethod:: setPosition
+   .. automethod:: setSize

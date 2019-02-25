@@ -1,0 +1,7 @@
+FieldVariable3
+==============
+
+.. currentmodule:: dfnlab.DFNSolver
+
+.. autoclass:: FieldVariable3
+   :show-inheritance:

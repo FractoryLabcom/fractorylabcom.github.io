@@ -1,0 +1,218 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="En">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>DFNMesh &#8212; DFNLab documentation</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="addData" href="dfnlab.DFNIO.addData.html" />
+    <link rel="prev" title="VectorFieldTriangle" href="dfnlab.DFNSolver.VectorFieldTriangle.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNIO.addData.html" title="addData"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNSolver.VectorFieldTriangle.html" title="VectorFieldTriangle"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" accesskey="U">DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/fractory_small.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dfnlab.DFNSolver.VectorFieldTriangle.html"
+                        title="previous chapter">VectorFieldTriangle</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dfnlab.DFNIO.addData.html"
+                        title="next chapter">addData</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/dfnlab.DFNMesh.DFNMesh.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="dfnmesh">
+<h1>DFNMesh<a class="headerlink" href="#dfnmesh" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="dfnlab.DFNMesh.DFNMesh">
+<em class="property">class </em><code class="descclassname">dfnlab.DFNMesh.</code><code class="descname">DFNMesh</code><a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">pybind11_builtins.pybind11_object</span></code></p>
+<p class="rubric">Methods Summary</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.displayInformations" title="dfnlab.DFNMesh.DFNMesh.displayInformations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayInformations</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.generateMesh" title="dfnlab.DFNMesh.DFNMesh.generateMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">generateMesh</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.getNbEdges" title="dfnlab.DFNMesh.DFNMesh.getNbEdges"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getNbEdges</span></code></a>(self,&nbsp;N)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.loadWellTunnel" title="dfnlab.DFNMesh.DFNMesh.loadWellTunnel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">loadWellTunnel</span></code></a>(self)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.manageIntersections" title="dfnlab.DFNMesh.DFNMesh.manageIntersections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">manageIntersections</span></code></a>(self,&nbsp;tol)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.meshQuality" title="dfnlab.DFNMesh.DFNMesh.meshQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">meshQuality</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.readMesh" title="dfnlab.DFNMesh.DFNMesh.readMesh"><code class="xref py py-obj docutils literal notranslate"><span class="pre">readMesh</span></code></a>(self,&nbsp;arg0,&nbsp;arg1,&nbsp;arg2,&nbsp;1]],&nbsp;arg3,&nbsp;1]])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.setBoundaryCondition" title="dfnlab.DFNMesh.DFNMesh.setBoundaryCondition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setBoundaryCondition</span></code></a>(self,&nbsp;…)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.setHydraulicProperties" title="dfnlab.DFNMesh.DFNMesh.setHydraulicProperties"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setHydraulicProperties</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.setResolution" title="dfnlab.DFNMesh.DFNMesh.setResolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setResolution</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#dfnlab.DFNMesh.DFNMesh.setResolutionIntersection" title="dfnlab.DFNMesh.DFNMesh.setResolutionIntersection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setResolutionIntersection</span></code></a>(self,&nbsp;arg0)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Documentation</p>
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.displayInformations">
+<code class="descname">displayInformations</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.displayInformations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.generateMesh">
+<code class="descname">generateMesh</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: str</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.generateMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.getNbEdges">
+<code class="descname">getNbEdges</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>N: int=-1</em><span class="sig-paren">)</span> &#x2192; int<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.getNbEdges" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.loadWellTunnel">
+<code class="descname">loadWellTunnel</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.loadWellTunnel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.manageIntersections">
+<code class="descname">manageIntersections</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>tol: float=1e-05</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.manageIntersections" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.meshQuality">
+<code class="descname">meshQuality</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: int</em><span class="sig-paren">)</span> &#x2192; List[int]<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.meshQuality" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.readMesh">
+<code class="descname">readMesh</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh, arg0: str, arg1: str, arg2: numpy.ndarray[float64[3, 1]], arg3: numpy.ndarray[float64[3, 1]]</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.readMesh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.setBoundaryCondition">
+<code class="descname">setBoundaryCondition</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>DomainBoundaryCondition: dfnlab.DFNBoundaryCondition.DFNDomainBoundaryCondition</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.setBoundaryCondition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.setHydraulicProperties">
+<code class="descname">setHydraulicProperties</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: dfnlab.DFNHydro.HydraulicProperties</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.setHydraulicProperties" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.setResolution">
+<code class="descname">setResolution</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.setResolution" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="dfnlab.DFNMesh.DFNMesh.setResolutionIntersection">
+<code class="descname">setResolutionIntersection</code><span class="sig-paren">(</span><em>self: dfnlab.DFNMesh.DFNMesh</em>, <em>arg0: float</em><span class="sig-paren">)</span> &#x2192; None<a class="headerlink" href="#dfnlab.DFNMesh.DFNMesh.setResolutionIntersection" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNIO.addData.html" title="addData"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dfnlab.DFNSolver.VectorFieldTriangle.html" title="VectorFieldTriangle"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">DFNLab documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../dfnlab.html" >DFNLab</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Fractory.
+      Last updated on Feb 25, 2019.
+    </div>
+  </body>
+</html>

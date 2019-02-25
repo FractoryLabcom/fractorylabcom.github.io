@@ -1,0 +1,6 @@
+writeVTKOnMesh
+==============
+
+.. currentmodule:: dfnlab.DFNIO
+
+.. autofunction:: writeVTKOnMesh
