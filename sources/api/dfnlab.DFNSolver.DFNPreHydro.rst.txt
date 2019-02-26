@@ -1,7 +1,0 @@
-DFNPreHydro
-===========
-
-.. currentmodule:: dfnlab.DFNSolver
-
-.. autoclass:: DFNPreHydro
-   :show-inheritance:

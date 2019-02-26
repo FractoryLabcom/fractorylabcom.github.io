@@ -1,6 +1,0 @@
-addData
-=======
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: addData

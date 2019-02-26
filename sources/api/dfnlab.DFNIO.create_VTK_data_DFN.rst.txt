@@ -1,6 +1,0 @@
-create_VTK_data_DFN
-===================
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: create_VTK_data_DFN

@@ -1,6 +1,0 @@
-load_DFN_file
-=============
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: load_DFN_file

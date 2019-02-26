@@ -1,6 +1,0 @@
-DISK
-====
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autodata:: DISK

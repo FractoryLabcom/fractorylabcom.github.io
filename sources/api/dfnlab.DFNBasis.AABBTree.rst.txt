@@ -1,7 +1,0 @@
-AABBTree
-========
-
-.. currentmodule:: dfnlab.DFNBasis
-
-.. autoclass:: AABBTree
-   :show-inheritance:

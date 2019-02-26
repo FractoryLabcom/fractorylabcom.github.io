@@ -1,6 +1,0 @@
-write_Fracture_Intersection
-===========================
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: write_Fracture_Intersection

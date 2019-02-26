@@ -1,6 +1,0 @@
-exportMeshFluxHydro
-===================
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: exportMeshFluxHydro

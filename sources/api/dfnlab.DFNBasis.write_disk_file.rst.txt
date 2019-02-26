@@ -1,6 +1,0 @@
-write_disk_file
-===============
-
-.. currentmodule:: dfnlab.DFNBasis
-
-.. autofunction:: write_disk_file

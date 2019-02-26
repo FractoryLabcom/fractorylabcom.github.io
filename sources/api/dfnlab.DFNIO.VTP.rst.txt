@@ -1,6 +1,0 @@
-VTP
-===
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autodata:: VTP

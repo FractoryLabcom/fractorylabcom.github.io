@@ -1,6 +1,0 @@
-write_intersections
-===================
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: write_intersections

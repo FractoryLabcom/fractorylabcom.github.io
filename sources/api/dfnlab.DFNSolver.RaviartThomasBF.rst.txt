@@ -1,7 +1,0 @@
-RaviartThomasBF
-===============
-
-.. currentmodule:: dfnlab.DFNSolver
-
-.. autoclass:: RaviartThomasBF
-   :show-inheritance:

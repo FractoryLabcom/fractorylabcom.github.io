@@ -1,6 +1,0 @@
-intersection
-============
-
-.. currentmodule:: dfnlab.Geometry
-
-.. autofunction:: intersection

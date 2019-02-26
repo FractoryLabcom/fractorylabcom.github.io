@@ -1,6 +1,0 @@
-solveDarcyProblem
-=================
-
-.. currentmodule:: dfnlab.DFNSolver
-
-.. autofunction:: solveDarcyProblem

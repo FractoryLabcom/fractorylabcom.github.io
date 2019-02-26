@@ -1,7 +1,0 @@
-Basis_Function
-==============
-
-.. currentmodule:: dfnlab.DFNSolver
-
-.. autoclass:: Basis_Function
-   :show-inheritance:

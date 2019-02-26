@@ -1,6 +1,0 @@
-STL
-===
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autodata:: STL

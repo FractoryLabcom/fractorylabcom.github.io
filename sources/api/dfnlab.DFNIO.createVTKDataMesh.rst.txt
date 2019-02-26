@@ -1,6 +1,0 @@
-createVTKDataMesh
-=================
-
-.. currentmodule:: dfnlab.DFNIO
-
-.. autofunction:: createVTKDataMesh
